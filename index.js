@@ -155,6 +155,7 @@ function Cookie(name, value, attrs) {
   }
 
   if (value && (!fieldContentRegExp.test(value) || RESTRICTED_VALUE_CHARS_REGEXP.test(value))) {
+    console.log('INVALID ARGUMENT', name, value)
     throw new TypeError('argument value is invalid');
   }
 
